@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   get 'pages/index', to: 'pages#index'
 
+  resources :articles
+
   root 'welcome#home'
 end
